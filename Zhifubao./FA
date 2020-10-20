@@ -1,0 +1,5 @@
+public class Faqianren extends Zhifubao {
+    public Faqianren(float yu) {
+        super(yu);
+    }
+}
