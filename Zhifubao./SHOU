@@ -1,0 +1,5 @@
+public class Shouqian extends Zhifubao{
+    public Shouqian(float yu) {
+        super(yu);
+    }
+}
