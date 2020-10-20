@@ -1,0 +1,28 @@
+public class Zhifubao {
+    private float yu;
+    boolean bz;
+    public Zhifubao() {
+    }
+    public Zhifubao(float yu) {
+        this.yu = yu;
+    }
+    public void zhichu(float send){
+        if (this.yu>=send&&send>=0){
+            this.yu = this.yu-send;
+            this.bz = true;
+        }else {
+            System.out.println("余额不足");
+            this.bz = false;
+        }
+    }
+    public void shouru(float geet){
+        if (geet>0){
+            this.yu = this.yu +geet;
+        }else {
+            System.out.println("疯了？");
+        }
+    }
+    public float getYu() {
+        return yu;
+    }
+}
