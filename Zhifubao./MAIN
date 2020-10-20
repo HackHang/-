@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class maain {
+    public static void main(String[] args) {
+        Faqianren fa = new Faqianren(100);
+        Shouqian sh = new Shouqian(100);
+        float mon =(float) new Scanner(System.in).nextFloat();
+        float avmon = mon/7;
+        if (avmon>=0){
+            fa.zhichu(mon);
+            if (fa.bz){
+                System.out.println("send:"+mon);
+                System.out.println("群主还剩下 "+fa.getYu()+" RMB");
+                sh.shouru(avmon);
+                System.out.println("get:"+avmon);
+                System.out.println("我还剩下 "+sh.getYu()+" RMB");
+            }
+        }else {
+            System.out.println("????????");
+        }
+
+    }
+}
